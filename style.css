@@ -1,0 +1,12 @@
+/* Adicione seu estilo CSS aqui */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.pergunta {
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 10px;
+}
