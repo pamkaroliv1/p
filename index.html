@@ -3,22 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ziuQ Books</title>
-    <link rel="stylesheet" href="static/style.css">
+    <title>Jogo PySimpleGUI</title>
+   <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <h1>ziuQ Books</h1>
-    <form action="/result" method="post">
-        {% for pergunta_resposta in perguntas_respostas %}
-            <div class="pergunta">
-                <p>{{ pergunta_resposta.pergunta }}</p>
-                {% for opcao in pergunta_resposta.incorretas %}
-                    <input type="radio" name="{{ pergunta_resposta.pergunta }}" value="{{ opcao }}"> {{ opcao }}<br>
-                {% endfor %}
-                <input type="radio" name="{{ pergunta_resposta.pergunta }}" value="{{ pergunta_resposta.resposta }}"> {{ pergunta_resposta.resposta }}<br>
-            </div>
-        {% endfor %}
-        <button type="submit">Enviar Respostas</button>
+    <h1>Bem-vindo ao Jogo PySimpleGUI</h1>
+    <form action="/jogo" method="post">
+        <label for="NOME">Digite seu nome:</label>
+        <input type="text" id="NOME" name="NOME" required>
+        <button type="submit">Iniciar Jogo</button>
     </form>
 </body>
 </html>
+
